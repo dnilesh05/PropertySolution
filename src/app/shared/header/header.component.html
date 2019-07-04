@@ -1,0 +1,62 @@
+<nav class="navbar navbar-expand-sm inventory-navbar fixed-top">
+  <div class="container-fluid" style="padding: 0 10px;">
+    <div class="">
+      <span class="inventory-icon">
+        <i class="fa fa-home" aria-hidden="true" style="font-size:35px;"></i>
+
+      </span>
+    </div>
+    <a class="navbar-brand inventory-brand" href="#">
+      <span class="inventory-brand-name">
+        <b>Propertysolution4U </b>
+      </span>
+      <p class="inventory-brand-subname">
+        <span style="font-size:11px;">Mumbai & Navi Mumbai </span>
+      </p>
+    </a>
+    <div class="d-sm-none ">
+      <button
+        type="button"
+        class="navbar-toggle"
+        data-toggle="collapse"
+        data-target="#inventoryManagementBar"
+        style="background: #000;"
+      >
+        <i class="fa fa-bars" aria-hidden="true" style="color: #fff;font-size: 35px;"></i>
+      </button>
+    </div>
+
+    
+    <div class="collapse navbar-collapse" id="inventoryManagementBar">
+      <div class="col-sm-4 col-md-3 pl-0 location-box">
+        <select
+          class="form-control classic location-select-box"
+          id="marketplaceId1">
+          <option *ngFor="let item of location" [value]="">
+            <b>{{ item }}</b></option
+          >
+        </select>
+      </div>
+      <div class="col-sm-4 col-md-3 category-box">
+        <select
+          class="form-control classic location-select-box"
+          id="marketplaceId1"
+        >
+          <option *ngFor="let item of propertyCategory" [value]="">
+            <b>{{ item }}</b></option
+          >
+        </select>
+      </div>
+      <div class="col-sm-2 col-md-2 post-btn">
+        <button class="btn btn-sm" style="font-size:16px;background:  rgb(217, 224, 33);color: #676363;  ">
+          <b>POST AD</b> 
+        </button>
+      </div>
+      <div class="col-sm-2 col-md-2  login-btn ">
+          <a class="submenu-title float-right login-btn-text" href="https://rockitportal.azurewebsites.net/" 
+          ><i class="fa fa-user login-btn-icon" aria-hidden="true"></i><b> LOGIN</b></a
+          >
+      </div>
+    </div>
+  </div>
+</nav>

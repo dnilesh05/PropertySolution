@@ -1,0 +1,20 @@
+.sort-data{
+    float: right;
+}
+.post-add{
+    border:1px solid #ccc;
+    background: rgba(221, 221, 199, 0.89);
+    margin: 0px;
+}
+@media only screen and (max-width: 520px) {
+    .sort-data{
+        float: left;
+        padding-left: 15px
+    }
+    .post-add{
+        border:1px solid #ccc;
+        background: rgba(221, 221, 199, 0.89);
+        margin: 0 15px;
+        height: 250px;
+    }
+  }

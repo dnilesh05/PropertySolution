@@ -1,0 +1,200 @@
+.inventory-navbar {
+    color: #fff;
+    background: #fff;
+    border-top: 8px solid  rgb(217, 224, 33);
+    box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.35);
+    font-family: "Roboto";
+    padding: 10px 0;
+  }
+  .inventory-navbar .inventory-icon {
+    padding: 15px  15px 9px 15px;
+    background: rgb(217, 224, 33);
+    color: #fff;
+    margin-top: -5px;
+  }
+  .inventory-navbar .inventory-brand {
+    color: #676363;
+    font-size: 19px;
+  }
+  .inventory-navbar .inventory-brand-name {
+    padding-left: 6px;
+  }
+  .inventory-navbar .inventory-brand-subname {
+    margin: -12px 7px;
+    padding-bottom: 8px;
+  }
+  .inventory-navbar .inventory-submenu {
+    color: #676363;
+    font-size: 15px;
+    margin: -5px 0;
+    font-size: 12px;
+  }
+  .inventory-navbar .submenu-title {
+    color: #676363;
+    letter-spacing: 0.02em;
+  }
+  
+  a .active {
+    text-decoration: none;
+    border-bottom: 4px solid #422257;
+  }
+  .nav-item > a {
+    text-decoration: none;
+    border-bottom: 4px solid transparent;
+    color: #000000;
+  }
+  
+  .inventory-navbar .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background: #000;
+  }
+  .inventory-submenu {
+    font-family: "Roboto";
+    font-size: 13px;
+    text-align: center;
+  }
+  .inventory-submenu > a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .inventory-navbar .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #fff !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem rgba(111, 113, 114, 0.25);
+  }
+  
+  .logout-tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .logout-tooltip .logout-tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 1px;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+    font-family: "Roboto";
+    font-size: 12px;
+    margin-left: 2px;
+  }
+  
+  .logout-tooltip .logout-tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+  }
+  .logout-tooltip:hover .logout-tooltip-text {
+    visibility: visible;
+  }
+  
+  select {
+    background-color: white;
+    border: 2px solid rgb(217, 224, 33);
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;  
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  select.classic {
+    background-image:
+      linear-gradient(45deg, transparent 50%, #fff 50%),
+      linear-gradient(135deg, #fff 50%, transparent 50%),
+      linear-gradient(to right, rgb(217, 224, 33), rgb(217, 224, 33));
+    background-position:
+      calc(100% - 20px) calc(1em + 2px),
+      calc(100% - 15px) calc(1em + 2px),
+      100% 0;
+    background-size:
+      8px 7px,
+      7px 7px,
+      3em 3em;
+    background-repeat: no-repeat;
+  }
+
+  .location-box{
+    margin-top:0px;
+  }
+  .category-box{
+    margin-top: 0px;
+  }
+  .login-btn-text{
+    font-size:16px;
+  }
+  .login-btn-icon{
+    font-size: 20px;
+  }
+  .location-select-box{
+    height: 40px;font-size: 16px;
+  }
+  @media  screen and ( min-width: 521px) and (max-width: 720px) {
+
+    .inventory-navbar .inventory-icon {
+      padding:14px 4px 5px 4px;
+      background: rgb(217, 224, 33);
+      color: #fff;
+      margin-top: -5px;
+    }
+    .inventory-navbar .inventory-brand {
+      color: #676363;
+      font-size: 12px;
+    }
+    .inventory-navbar .inventory-brand-subname {
+      margin: -3px 7px;
+      padding-bottom: 6px;
+    }
+    .location-select-box{
+      height: 40px !important;
+      font-size: 12px;
+    }
+  }
+  @media only screen and (max-width: 520px) {
+    .location-box{
+      margin: 20px 0px 10px;
+      padding: 0px;
+    }
+    .category-box{
+      margin-top: 15px;
+      /* padding-left: 0px !important; */
+      padding: 0px;
+    }
+    .post-btn{
+      margin-top: 20px;
+      padding: 0px;
+    }
+    .login-btn{
+      margin-top: -35px;
+      font-size: 25px;
+    }
+    .login-btn-text{
+      font-size:18px;
+    }
+    .login-btn-icon{
+      font-size: 18px;
+    }
+  }
